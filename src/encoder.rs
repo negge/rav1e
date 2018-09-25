@@ -371,7 +371,6 @@ impl FrameInvariants {
 
         if config.tune == Tune::Psychovisual {
             if min_partition_size < BlockSize::BLOCK_8X8 {
-                // TODO: Display message that min partition size is enforced to 8x8
                 min_partition_size = BlockSize::BLOCK_8X8;
                 println!("If tune=Psychovisual is used, min partition size is enforced to 8x8");
             }
